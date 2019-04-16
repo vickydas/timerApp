@@ -10,14 +10,17 @@
 <body>
 	<div class="header">Timer</div>
 	<div class="setTimer">
-		<label for="minutes"><input type="number" id="minutes" name="minutes" min="0" max="60" >
-		</input></label>
+		Minutes<input type="number" id="minutes" name="minutes" min="0" max="60" >
+		</input>
+		Seconds
 		<input type="number" id="seconds" name="seconds" min="0" max="60">
 		</input>
-		<input type="button" id="startbutton"  name="startbutton">Start Timer</input>
+		<input type="button" class="startbutton" id="startbutton"  name="startbutton" value="Start"></input>
+		<br>
+		<button class="stop" id="stop">Stop</button>
 	</div>
 	<div class="showTimer">
-		<p id="textId"></p>
+		<p class="textId" id="textId"></p>
 		<audio id="audioId">
 		<source src="resources/analog-watch-alarm_daniel-simion.wav" type="audio/wav">
 		</audio>
